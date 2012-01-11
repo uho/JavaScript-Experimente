@@ -2,29 +2,28 @@
 <head>
     <title>Hello World</title>
     <script type="text/javascript">
-        <!--
-        function rechnen() {
+        var ausrechnen = function () {
+            var erg;
             if (document.forms[0].Ausw[2].value = 1) {
-                var erg = document.rechnen.eing1.value + document.rechnen.eing2.value;
+                erg = document.rechnen.eing1.value + document.rechnen.eing2.value;
                 alert("Ergebnis: " + erg);
             }
             else if (document.forms[0].Ausw[3].value = 1) {
-                var erg = document.rechnen.eing1.value - document.rechnen.eing2.value;
+                erg = document.rechnen.eing1.value - document.rechnen.eing2.value;
                 alert("Ergebnis: " + erg);
             }
             else if (document.forms[0].Ausw[4].value = 1) {
-                var erg = document.rechnen.eing1.value * document.rechnen.eing2.value;
+                erg = document.rechnen.eing1.value * document.rechnen.eing2.value;
                 alert("Ergebnis: " + erg);
             }
             else if (document.forms[0].Ausw[4].value = 1) {
-                var erg = document.rechnen.eing1.value / document.rechnen.eing2.value;
+                erg = document.rechnen.eing1.value / document.rechnen.eing2.value;
                 alert("Ergebnis: " + erg);
             }
             else {
                 alert("Falsche Eingabe!");
             }
-        }
-        //-->
+        };
     </script>
 </head>
 <body>
@@ -46,7 +45,7 @@
             </td>
             <td>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="button" value="berechnen" onclick="rechnen()">
+                <input type="button" value="berechnen" onclick="ausrechnen()">
             </td>
         </tr>
     </table>
